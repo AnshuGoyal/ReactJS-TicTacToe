@@ -4,4 +4,4 @@ A simple ReactJs Application for a web application.
 
 ##### App SnapShot
 
-<img src = "./demo.png" height = 400/>
+<img src = "./demo.gif" height = 400/>

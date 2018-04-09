@@ -4,7 +4,7 @@ import './index.css';
 
 function Square(props) {
   return (
-    <button className="square" onClick={props.onClick}>
+    <button className="square col-md-12 col-sm-12 col-xs-12" onClick={props.onClick}>
       {props.value}
     </button>
   );
@@ -22,18 +22,18 @@ class Board extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="board-row">
+      <div className="board-container">
+        <div className="board-row col-md-12 col-sm-12 col-xs-12">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
           {this.renderSquare(2)}
         </div>
-        <div className="board-row">
+        <div className="board-row col-md-12 col-sm-12 col-xs-12 ">
           {this.renderSquare(3)}
           {this.renderSquare(4)}
           {this.renderSquare(5)}
         </div>
-        <div className="board-row">
+        <div className="board-row col-md-12 col-sm-12 col-xs-12">
           {this.renderSquare(6)}
           {this.renderSquare(7)}
           {this.renderSquare(8)}
@@ -105,15 +105,15 @@ class Game extends React.Component {
     }
 
     return (
-      <div className="game">
-        <div className="game-board">
+      <div className="game row">
+        <div className="game-board col-md-9 col-sm-12 col-xs-12">
           <Board
             squares={current.squares}
             onClick={(i) => this.handleClick(i)}
           />
         </div>
-        <div className="game-info">
-          <div>{status}</div>
+         <div className="game-info col-md-3 col-sm-12 col-xs-12">
+          <div className="status">{status}</div>
           <ol>{moves}</ol>
         </div>
       </div>
