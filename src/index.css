@@ -5,6 +5,11 @@ body {
 
 ol, ul {
   padding-left: 30px;
+  font-size: 20px;
+}
+
+ol li{
+  margin: 10px;
 }
 
 .board-row:after {
@@ -13,23 +18,29 @@ ol, ul {
   display: table;
 }
 
+.game-board {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
 .status {
   margin-bottom: 10px;
 }
 
 .square {
   background: #fff;
-  border: 1px solid #999;
+  border: 2px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 60px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 150px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 150px;
 }
 
 .square:focus {
@@ -46,5 +57,11 @@ ol, ul {
 }
 
 .game-info {
-  margin-left: 20px;
+  margin-left: 70%;
+  font-size: 30px;
+}
+
+.game-buttons{
+  font-size: 18px;
+  border-radius: 10px;
 }
