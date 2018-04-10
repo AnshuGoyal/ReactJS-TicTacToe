@@ -2,6 +2,6 @@
 
 A simple ReactJs Application for a web application.
 
-##### App SnapShot
+##### App Demo
 
 <img src = "./demo.gif" height = 400/>
